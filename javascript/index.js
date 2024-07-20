@@ -1,8 +1,7 @@
 // This will print in the wrong order.
 // We added it as an example and to test that the arrays from data.js are loaded
 
-// 🚨🚨🚨 Comment out the below code before you start working on the code
-
+// 🚨🚨🚨 Comment out the below code before you start working on the code 
 // Out of sync
   // getInstruction("mashedPotatoes", 0, (step1) => {
   //   document.querySelector("#mashedPotatoes").innerHTML += `<li>${step1}</li>`;
@@ -30,18 +29,16 @@
 // Iteration 1 - using callbacks
 // ...
 
+
 // Iteration 2 - using promises
 // ...
   obtainInstruction('steak', 0)
     .then( (step0) => {
       document.querySelector("#steak").innerHTML += `<li>${step0}</li>`
-      //  ... Your code here
       return obtainInstruction('steak', 1)
-        
     })
     .then((step1) => {
       document.querySelector("#steak").innerHTML += `<li>${step1}</li>`
-      //  ... Your code here
       return obtainInstruction('steak', 2)
     })
     .then((step2) => {
@@ -68,7 +65,6 @@
       document.querySelector("#steak").innerHTML += `<li>${step7}</li>` 
     })
     .catch((error) => {console.log(error)})
-
 
 // Iteration 3 using async/await
 // ...
