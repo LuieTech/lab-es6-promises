@@ -94,6 +94,7 @@ async function makeBroccoli() {
     
     //final step
     document.querySelector("#broccoli").innerHTML += `<li>Broccoli is ready!</li>`;
+
     document.querySelector("#broccoliImg").removeAttribute("hidden");
 
   } catch (error) {
